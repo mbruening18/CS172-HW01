@@ -1,8 +1,8 @@
 //
 //  main.cpp
-//  Sept 8 2016
+//  HW #01
 //
-//  Created by Megan Bruening on 9/8/16.
+//  Created by Megan Bruening on 9/13/16.
 //  Copyright © 2016 Megan Bruening. All rights reserved.
 //
 
@@ -17,16 +17,16 @@ using namespace std;
 
 int main()
 {
-  
-
+    
+    
     //ex02();
     //ex03();
     //ex04();
-      ex05();
+    ex05();
     return 0;
     
-   
-
+    
+    
     
     
 }

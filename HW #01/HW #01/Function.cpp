@@ -1,8 +1,8 @@
 //
 //  Function.cpp
-//  Sept 8 2016
+//  HW #01
 //
-//  Created by Megan Bruening on 9/8/16.
+//  Created by Megan Bruening on 9/13/16.
 //  Copyright © 2016 Megan Bruening. All rights reserved.
 //
 
@@ -139,26 +139,27 @@ void ex04()
     }
     /*
      // ex 3 letter b
-    cout<< endl;
-
-    int answerCubed =0;
-    answer * answer * answer == answerCubed;
+     cout<< endl;
+     
+     int answerCubed =0;
+     answer * answer * answer == answerCubed;
+     
+     cout << "Your awnser cubed is " << 'answerCubed';
+     
+     // ex 3 letter c
+     do{
+     
+     }while();
+     // ex 3 letter d
+     // ex 3 letter e
+     // ex 3 letter f
+     // ex 3 letter g
+     */
     
-    cout << "Your awnser cubed is " << 'answerCubed';
-    
-    // ex 3 letter c
-    do{
-        
-    }while();
-    // ex 3 letter d
-    // ex 3 letter e
-    // ex 3 letter f
-    // ex 3 letter g
-    */
-
 }
 
 void ex05()
 {
     
 }
+

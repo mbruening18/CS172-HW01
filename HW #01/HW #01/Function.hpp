@@ -1,10 +1,11 @@
 //
 //  Function.hpp
-//  Sept 8 2016
+//  HW #01
 //
-//  Created by Megan Bruening on 9/8/16.
+//  Created by Megan Bruening on 9/13/16.
 //  Copyright © 2016 Megan Bruening. All rights reserved.
 //
+
 #ifndef Function_hpp
 #define Function_hpp
 
