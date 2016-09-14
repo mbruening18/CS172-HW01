@@ -14,6 +14,11 @@
 #include "Function.hpp"
 
 using namespace std;
+int timesTwo(int value);
+int add(int v1, int v2);
+void add1(int& p);
+void outputArray(int array[], int size);
+void outputArray2(int array[], int size);
 
 
 void ex02()
@@ -86,15 +91,17 @@ void ex02()
     
     if (outsidetempurate > 90)
     {
-        int newShelfLife=0;
-        shelfLifeOfChocolate-4 == newShelfLife;
-        cout << 'newShelfLife';
+        
+        shelfLifeOfChocolate = shelfLifeOfChocolate-4;
+        if ( shelfLifeOfChocolate <0)
+        {
+            //Negative would be invalid
+            shelfLifeOfChocolate=0;
+        }
     }
-    else
-    {
-        cout << "The shelf life is " << shelfLifeOfChocolate;
-    }
-    cout << "" << endl;
+    cout << "The shelf life is " << shelfLifeOfChocolate;
+    
+    cout << "" <<endl;
     
 }
 
@@ -105,7 +112,7 @@ void ex03()
     cin >> areaOfASquare;
     double DiagonalOfSquare=0;
     DiagonalOfSquare = sqrt(2 * areaOfASquare);
-    cout << DiagonalOfSquare <<endl;
+    cout << "The diagonal of the square is " << DiagonalOfSquare <<endl;
     
     char y = 'y';
     char n = 'n';
@@ -121,15 +128,17 @@ void ex03()
         cout << "No? you should take it!"<<endl;
     }
     // ex 2 letter C
+    char tab='\t';
     
     // ex 2 letter D
     string mailingAddress;
     cout << "Enter Mailing Address: ";
-    cin  >> mailingAddress;
+    cin.ignore();
+    getline(cin, mailingAddress);
     cout << "Your Mailing Address is " << mailingAddress << endl;
     
     // ex 2 letter E
-    
+    string stur ="";
 }
 
 void ex04()
@@ -158,49 +167,128 @@ void ex04()
      cout<< endl;
      
      int answerCubed =0;
-     answer * answer * answer == answerCubed;
-     
-     cout << "Your awnser cubed is " << 'answerCubed';
     
-     // ex 3 letter c
+    
+    for (int i=1;i<=answer;i++)
+    {
+        answerCubed = answerCubed + (i*i*i);
+    }
+     cout << "Your answer cubed is " << answerCubed <<endl;
+
+    
+    int count =0;
+
      do
      {
-         
          cout << setw(3) << "*";
-
-     }while(answer);
-    
-    
-     // ex 3 letter d
-     // ex 3 letter e
+         count+=1;
+     }while(count<answer);
    
+    cout << endl;
     
-    
-}
-/*
-  // ex 3 letter f
- int add ()
-{
+   
+    for (int i=0; i<=40;i++)
+    {
+        if (i%2==0)
+        {
+            cout << i << " ";
+        }
+    }
+    int result =timesTwo(answer);
+    cout << "Result of timesTwo:" << result <<endl;
+
     srand(time(NULL));
     int x = rand()%100;
     int y = rand()%100;
-    cout << "x is " << x << " and y is " << y << endl;
+    
+    int result2 =add(x,y);
+    cout << "Result of v1 + v2:" << result2 <<endl;
+    
+    int result3 = 50;
+    add1(result3);
+    cout << "Result of add1:" << result3 <<endl;
+
 }
 
-// ex 3 letter g
 
+ int timesTwo(int value)
+{
+    return value*2;
+}
 
+int add(int v1, int v2)
+{
+    return v1 + v2;
+}
+
+void add1(int& p)
+{
+    p = p+1;
+}
 
 void ex05()
 {
-    const int setOfNumbers = 1;
-    const int integer = 5;
+    const int numbers = 5;
+    int integer [numbers];
+    int size=0;
+    cout << "Enter 5 numbers: ";
     
-        int exams[setOfNumbers][integer]=
- 
-        {
-            cin<< 
-            
-        };
+    for (int i=0; i<numbers;i++)
+    {
+        cin >>integer[i];
+        
+    }
+    int sum=0;
+    int product=1;
+    
+    for (int i=0; i<numbers;i++)
+    {
+        sum += integer[i];
+        product *= integer[i];
+    
+    }
+    cout << "The sum is " <<sum <<endl;
+    cout << "The product is " <<product <<endl;
+        cout << "" <<endl;
+    outputArray(integer,numbers);
+    outputArray2(integer, numbers);
+    
+    
+    
+    
 }
-*/
+
+void outputArray(int array[], int size)
+{
+    for (int i=0; i<size; i++)
+    {
+        cout << array[i] << " ";
+    }
+}
+
+void outputArray2(int array[], int size)
+{
+    int value=0;
+    cout << "Enter a value: "<<endl;
+    cin >> value;
+    bool hasvalue=false;
+    
+    for (int i=0; i<size; i++)
+    {
+        if (value==array[i])
+        {
+            hasvalue=true;
+        }
+        
+        
+    }
+    if(hasvalue)
+    {
+        cout << "Yes, the array has the value " << value<<endl;
+    }
+    else
+    {
+        cout << "No, it doesnt have that value "<< value <<endl;
+    }
+    
+}
