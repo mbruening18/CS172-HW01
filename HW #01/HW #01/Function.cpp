@@ -188,7 +188,7 @@ void ex04()
 }
 
 // ex 3 letter g
-*/
+
 
 
 void ex05()
@@ -197,9 +197,10 @@ void ex05()
     const int integer = 5;
     
         int exams[setOfNumbers][integer]=
+ 
         {
             cin<< 
             
         };
 }
-
+*/
