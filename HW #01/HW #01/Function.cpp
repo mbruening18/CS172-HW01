@@ -36,50 +36,65 @@ void ex02()
     {
         cout << "x is equal to y"<<endl;
     }
+    /*
     else
     {
         cout << "y is greater than x"<<endl;
     }
-    
+    */
     int numberOfShares=0;
-    cout<< "Enter a value for a number of shares"<<endl;
+    cout<< "Enter a value for a number of shares: ";
     cin>> numberOfShares;
     
     if (numberOfShares < 100)
     {
-        cout << "Number of shares is less than 100"<<endl;
+        cout << numberOfShares << " is less than 100"<<endl;
     }
     else
     {
-        cout << "Number of shares is greater than 100"<<endl;
+        cout << numberOfShares << " is greater than 100"<<endl;
     }
+    
+   
     
     int boxwidth=0;
     int bookwidth=0;
-    cout << "Enter a box width" <<endl;
+    cout << "Enter a box width: ";
     cin >> boxwidth;
-    cout << "Enter a book width" <<endl;
+    cout << "Enter a book width: " ;
     cin >> bookwidth;
     
-    if (boxwidth/bookwidth)
+    if ((boxwidth)/(bookwidth))
     {
         cout << "The box width is evenly dibisable by the book width" <<endl;
     }
+    else
+    {
+        cout << "The box width is not dibisable by the book width" <<endl;
+
+    }
+    
+   
     
     int shelfLifeOfChocolate=0;
     int outsidetempurate=0;
     
-    cout << "Enter the shelf life for a box of chocolate";
+    cout << "Enter the shelf life for a box of chocolate: ";
     cin >> shelfLifeOfChocolate;
-    cout << "Enter the outside temperature";
+    cout << "Enter the outside temperature: ";
     cin >> outsidetempurate;
     
     if (outsidetempurate > 90)
     {
         int newShelfLife=0;
         shelfLifeOfChocolate-4 == newShelfLife;
-        cout << newShelfLife;
+        cout << 'newShelfLife';
     }
+    else
+    {
+        cout << "The shelf life is " << shelfLifeOfChocolate;
+    }
+    cout << "" << endl;
     
 }
 
@@ -107,12 +122,13 @@ void ex03()
     }
     // ex 2 letter C
     
+    // ex 2 letter D
     string mailingAddress;
     cout << "Enter Mailing Address: ";
     cin  >> mailingAddress;
     cout << "Your Mailing Address is " << mailingAddress << endl;
     
-    // ex 2 letter e
+    // ex 2 letter E
     
 }
 
@@ -137,7 +153,7 @@ void ex04()
             
         }
     }
-    /*
+    
      // ex 3 letter b
      cout<< endl;
      
@@ -145,21 +161,45 @@ void ex04()
      answer * answer * answer == answerCubed;
      
      cout << "Your awnser cubed is " << 'answerCubed';
-     
+    
      // ex 3 letter c
-     do{
-     
-     }while();
+     do
+     {
+         
+         cout << setw(3) << "*";
+
+     }while(answer);
+    
+    
      // ex 3 letter d
      // ex 3 letter e
-     // ex 3 letter f
-     // ex 3 letter g
-     */
+   
+    
     
 }
+/*
+  // ex 3 letter f
+ int add ()
+{
+    srand(time(NULL));
+    int x = rand()%100;
+    int y = rand()%100;
+    cout << "x is " << x << " and y is " << y << endl;
+}
+
+// ex 3 letter g
+*/
+
 
 void ex05()
 {
+    const int setOfNumbers = 1;
+    const int integer = 5;
     
+        int exams[setOfNumbers][integer]=
+        {
+            cin<< 
+            
+        };
 }
 
